@@ -36,7 +36,9 @@
       </el-row>
       <div class="line"></div>
       <div class="banquan">
-        <p style="fontSize: 14px; fontWeight: 400">版权所有©建设工程信息服务平台 CopyRight© All Rights Reserved 京ICP备11004160号-3</p>
+        <p
+          style="fontSize: 14px; fontWeight: 400"
+        >版权所有©建设工程信息服务平台 CopyRight© All Rights Reserved 京ICP备11004160号-3</p>
       </div>
     </div>
   </div>
@@ -50,22 +52,27 @@ export default {
 
 <style lang="less" scoped>
 .footer {
-    height: 340px;
-    // border: 1px solid #000;
-    background-color: #2C2D2D;
-    color: #FFFFFF;
+  height: 340px;
+  // border: 1px solid #000;
+  background-color: #2c2d2d;
+  color: #ffffff;
   // background-color: #333;
-    .main {
-    margin: 0 40px;
+  .main {
+    width: 1200px;
+    margin: 0 auto;
     padding-bottom: 20px;
     .el-row {
       // border-bottom: 1px solid #FFFFFF;
+      padding: 45px 0 48px;
       .el-col {
-        margin: 40px 0;
-        font-size: 16px;
+        // margin: 40px 0;
+        font-size: 14px;
+        letter-spacing: 2px;
+        line-height: 20px;
         font-weight: 400;
+        margin-top: 14px;
         :first-child {
-          font-size: 20px;
+          font-size: 18px;
           font-weight: bold;
           margin-bottom: 20px;
         }
@@ -79,12 +86,12 @@ export default {
     }
     .line {
       // width:1440px;
-      height:1px;
-      background:rgba(255,255,255,1);
-      opacity:0.14;
+      height: 1px;
+      background: rgba(255, 255, 255, 1);
+      opacity: 0.14;
     }
     .banquan {
-      margin-top: 20px;
+      margin-top: 29px;
       text-align: center;
     }
   }

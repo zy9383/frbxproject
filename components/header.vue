@@ -79,20 +79,20 @@ export default {
 
 <style lang="less" scoped>
 .container {
-  // width:1920px;
-  height: 140px;
+  width:1200px;
+  height: 120px;
   background: rgba(255, 255, 255, 1);
-  // margin: 0 241px;
+  margin: 0 auto;
   .first {
-    height: 76px;
-    line-height: 76px;
+    height: 64px;
+    line-height: 64px;
     // margin: 0 auto;
 
     .navs {
       flex: 1;
-      font-size: 24px;
-      justify-content: space-around;
-      // border-bottom: 1px solid #000;
+      font-size: 18px;
+      justify-content: space-between;
+      border-bottom: 1px solid #000;
       li {
         // border: 1px solid #000;
         :hover {
@@ -103,7 +103,7 @@ export default {
     .logoPart {
       width: 204px;
       height: 32px;
-      font-size: 34px;
+      font-size: 30px;
       font-family: Tensentype MingSongJ-W8;
       font-weight: 800;
       color: rgba(52, 52, 52, 1);
@@ -117,13 +117,13 @@ export default {
 
   .scrollContainer {
     /* color: red; */
-    font-size: 18px;
+    font-size: 16px;
     // margin-left: 10px;
-    width: 1102px;
-    margin: 0 auto;
-    height: 18px;
+    width: 1033px;
+    margin: 16px auto;
+    height: 48px;
     // border: 1px solid #000;
-    line-height: 18px;
+    // line-height: 16px;
     // overflow: hidden;
   }
 }
