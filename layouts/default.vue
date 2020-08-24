@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header v-show="!(path === '/user/login' || path === '/user/register')" />
+    <Header />
     <Nuxt />
-    <Footer v-show="!(path === '/user/login' || path === '/user/register')" />
+    <Footer />
   </div>
 </template>
 
@@ -13,21 +13,6 @@ export default {
   components: {
     Header,
     Footer
-  },
-  data () {
-    return {
-      path: ''
-    }
-  },
-  mounted () {
-    console.log(this.$route.path)
-    this.path = this.$route.path // this.path = 当前页面路由
-  },
-  watch: {
-    // 监测路由变化
-    $route (to, from) {
-      this.path = to.path // 打开新页面路由
-    }
   }
 }
 </script>
