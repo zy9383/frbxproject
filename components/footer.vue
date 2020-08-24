@@ -3,31 +3,69 @@
     <div class="main">
       <el-row type="flex">
         <el-col>
-          <p>产品中心</p>
-          <p>工程投标保函</p>
-          <p>合同履约保函</p>
-          <p>工资支付保函</p>
-          <p>工程质量保函</p>
+          <p>
+            <a style="fontSize: 20px !important; fontWeight: bold !important" href="#">产品中心</a>
+          </p>
+          <p>
+            <a href="#">工程投标保函</a>
+          </p>
+          <p>
+            <a href="#">合同履约保函</a>
+          </p>
+          <p>
+            <a href="#">工资支付保函</a>
+          </p>
+          <p>
+            <a href="#">工程质量保函</a>
+          </p>
         </el-col>
         <el-col>
-          <p>新闻中心</p>
-          <p>招标公告</p>
-          <p>政策法规</p>
-          <p>新闻资讯</p>
-          <p>平台公告</p>
+          <p>
+            <a style="fontSize: 20px !important; fontWeight: bold !important" href="#">新闻中心</a>
+          </p>
+          <p>
+            <a href="#">招标公告</a>
+          </p>
+          <p>
+            <a href="#">政策法规</a>
+          </p>
+          <p>
+            <a href="#">新闻资讯</a>
+          </p>
+          <p>
+            <a href="#">平台公告</a>
+          </p>
         </el-col>
         <el-col>
-          <p>关于我们</p>
-          <p>公司介绍</p>
-          <p>联系我们</p>
-          <p>招贤纳士</p>
+          <p>
+            <a style="fontSize: 20px !important; fontWeight: bold !important" href="#">关于我们</a>
+          </p>
+          <p>
+            <a href="#">公司介绍</a>
+          </p>
+          <p>
+            <a href="#">联系我们</a>
+          </p>
+          <p>
+            <a href="#">招贤纳士</a>
+          </p>
         </el-col>
         <el-col>
-          <p>帮助中心</p>
-          <p>购买/退保指南</p>
-          <p>投保资料</p>
-          <p>申请理赔</p>
-          <p>常见问题</p>
+          <p>
+            <a style="fontSize: 20px !important; fontWeight: bold !important" href="#">帮助中心</a>
+          </p>
+          <p>
+            <a href="#">购买/退保指南</a>
+          </p>
+          <p>
+            <a href="#">投保资料</a>
+          </p>
+          <p>
+            <a href="#">申请理赔</a>
+          </p>
+          <p>
+            <a href="#">常见问题</a>
+          </p>
         </el-col>
         <el-col class="last">
           <p>服务热线</p>
@@ -63,7 +101,7 @@ export default {
     padding-bottom: 20px;
     .el-row {
       // border-bottom: 1px solid #FFFFFF;
-      padding: 45px 0 48px;
+      padding: 40px 0;
       .el-col {
         // margin: 40px 0;
         font-size: 14px;
@@ -76,7 +114,12 @@ export default {
           font-weight: bold;
           margin-bottom: 20px;
         }
-        h3 {
+        a {
+          color: #FFFFFF;
+          font-size: 16px !important;
+          font-weight: 400 !important;
+        }
+        p {
           margin-bottom: 10px;
         }
       }

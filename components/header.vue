@@ -7,9 +7,9 @@
       </div>
 
       <!-- nav菜单栏 -->
-      <el-row type="flex" class="navs">
+      <el-row class="navs">
         <!-- <nuxt-link v-for="(item, index) in navs" :key="index" :to="item.links">{{ item.name }}</nuxt-link> -->
-        <ul style="display: flex">
+        <ul>
           <li>
             <nuxt-link to="/">首页</nuxt-link>
           </li>
@@ -66,7 +66,7 @@ export default {
       //   name: '新闻中心'
       // }],
       userImg: 'https://cube.elemecdn.com/3/7c/3ea6beec64369c2642b92c6726f1epng.png',
-      lists: ['哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈哈']
+      lists: ['丰融保险保函丰融保险保函丰融保险保函丰融保险保函丰融保险保函丰融保险保函丰融保险保函丰融保险保函丰融保险保函丰融保险保函']
     }
   },
   methods: {
@@ -80,7 +80,7 @@ export default {
 <style lang="less" scoped>
 .container {
   width:1200px;
-  height: 120px;
+  height: 112px;
   background: rgba(255, 255, 255, 1);
   margin: 0 auto;
   .first {
@@ -89,14 +89,23 @@ export default {
     // margin: 0 auto;
 
     .navs {
-      flex: 1;
+      // display: flex;
+      // flex: 1;
+      // justify-content: space-between;
       font-size: 18px;
-      justify-content: space-between;
-      border-bottom: 1px solid #000;
-      li {
-        // border: 1px solid #000;
-        :hover {
-          // border-bottom: 1px solid #000;
+      .nuxt-link-exact-active {
+        // background: #316CEB;
+        color: #316CEB !important;
+        font-weight: bold;
+      }
+      ul {
+        display: flex;
+        // flex: 1;
+        justify-content: space-between;
+        width: 800px;
+        li:hover {
+          border-bottom: 4px solid #316CEB;
+          border-radius: 2px;
         }
       }
     }
@@ -108,9 +117,9 @@ export default {
       font-weight: 800;
       color: rgba(52, 52, 52, 1);
       line-height: 50px;
+      margin-top: 8px;
     }
     .el-avatar {
-      // vertical-align: unset;
       vertical-align: middle;
     }
   }
