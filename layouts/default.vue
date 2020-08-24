@@ -1,8 +1,8 @@
 <template>
   <div>
-    <Header v-show="!(path === '/user/login')" />
+    <Header v-show="!(path === '/user/login' || path === '/user/register')" />
     <Nuxt />
-    <Footer v-show="!(path === '/user/login')" />
+    <Footer v-show="!(path === '/user/login' || path === '/user/register')" />
   </div>
 </template>
 
