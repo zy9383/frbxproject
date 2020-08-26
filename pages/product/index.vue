@@ -1,4 +1,5 @@
 <template>
+<<<<<<< HEAD
   <div class="product">
     <!-- 头部图片、导航区域 -->
     <div class="top">
@@ -24,10 +25,17 @@
       <!-- 动态地绑定到它的 is 特性，让多个组件可以使用同一个挂载点，并动态切换。 -->
       <div class="tabs-content" :is="currentView"></div>
     </div>
+=======
+  <div>
+    产品中心
+    <insurance v-show="!isshow"  @isshow-handle='handle' />
+    <InsuranceForm v-show="isshow" @goback='isshow = false' />
+>>>>>>> b8191639d58662322ed9e776a98f01c9b72c4032
   </div>
 </template>
 
 <script>
+<<<<<<< HEAD
 // 导入子组件
 import child1 from '@/components/product/child1'
 import child2 from '@/components/product/child2'
@@ -54,6 +62,26 @@ export default {
     child2,
     child3,
     child4
+=======
+import Insurance from '@/components/insurance/insurance.vue'
+import InsuranceForm from '@/components/insurance-form/insurance-form.vue'
+export default {
+  components: {
+    Insurance,
+    InsuranceForm
+  },
+  data () {
+    return {
+      // 投保单默认隐藏
+      isshow: false
+    }
+  },
+  methods: {
+    handle () {
+      // 显示投保单
+      this.isshow = true
+    }
+>>>>>>> b8191639d58662322ed9e776a98f01c9b72c4032
   }
 }
 </script>
