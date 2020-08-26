@@ -17,13 +17,13 @@ export default {
       // 获取内容区宽度
       const width = document.getElementById('marquee').scrollWidth
       const marquee = document.getElementById('marquee')
-      let speed = 500 // 位移距离
+      let speed = width // 位移距离
       // 设置位移
       setInterval(function () {
         speed = speed - 3
         // 如果位移超过文字宽度，则回到起点
         if (-speed >= width) {
-          speed = 500
+          speed = width
         }
         marquee.style.transform = 'translateX(' + speed + 'px)'
       }, 40)
