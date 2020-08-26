@@ -113,7 +113,7 @@
 
 <script>
 export default {
-  data() {
+  data () {
     return {
       // tabs切换条默认显示first
       activeName: 'first',
@@ -124,7 +124,7 @@ export default {
       // 短信登陆数据
       smsLogin: {
         phoneNumber: '',
-        yanzhencode: '',
+        yanzhencode: ''
       },
       // 密码登录数据
       smsLogin1: {
@@ -146,19 +146,19 @@ export default {
           { required: true, type: 'number', message: '手机号必须为数字' }
         ],
         message: [
-          { required: true, message: '请输入活动名称', trigger: 'blur' },
+          { required: true, message: '请输入活动名称', trigger: 'blur' }
         ],
         newpassword: [
-          { required: true, message: '请输入活动名称', trigger: 'blur' },
+          { required: true, message: '请输入活动名称', trigger: 'blur' }
         ],
         surepassword: [
-          { required: true, message: '请输入活动名称', trigger: 'blur' },
+          { required: true, message: '请输入活动名称', trigger: 'blur' }
         ]
       },
       // 短信登陆校验规则
-      smsRules:{
+      smsRules: {
         phoneNumber: [
-          { required: true, message: '请输入活动名称', trigger: 'blur' },
+          { required: true, message: '请输入活动名称', trigger: 'blur' }
         ],
         yanzhencode: [
           { required: true, message: '请输入活动名称', trigger: 'blur' }
@@ -167,7 +167,7 @@ export default {
       // 密码登录校验规则
       smsRules1: {
         phoneNumber1: [
-          { required: true, message: '请输入活动名称', trigger: 'blur' },
+          { required: true, message: '请输入活动名称', trigger: 'blur' }
         ],
         yanzhencode1: [
           { required: true, message: '请输入活动名称', trigger: 'blur' }
@@ -175,18 +175,18 @@ export default {
         password: [
           { required: true, message: '请输入活动名称', trigger: 'blur' }
         ]
-      },
+      }
     }
   },
   methods: {
     // 让弹框显示
-    removepassword() {
+    removepassword () {
       this.removedialogVisible = true
     },
     // 重置表单
-    resetdialogVisible() {
+    resetdialogVisible () {
       this.removedialogVisible = false
-      this.$refs.removeRef.resetFields();
+      this.$refs.removeRef.resetFields()
     }
   }
 }

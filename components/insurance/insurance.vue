@@ -64,13 +64,13 @@
 <script>
 export default {
   name: 'Insurance',
-  data() {
+  data () {
     return {
     }
   },
   methods: {
   },
-  mounted() {
+  mounted () {
   }
 }
 </script>

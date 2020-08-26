@@ -267,7 +267,7 @@
 <script>
 export default {
   name: 'InsuranceForm',
-  data() {
+  data () {
     return {
       // 表明index，从0开始
       activeIndex: 0,
@@ -277,7 +277,7 @@ export default {
       informationForm: {
         name: '',
         code: '',
-        CorporateName: '',
+        CorporateName: ''
       },
       // 项目信息数据
       sportsForm: {
@@ -303,7 +303,7 @@ export default {
         ],
         CorporateName: [
           { required: true, message: '请输入企业名称', trigger: 'blur' }
-        ],
+        ]
       },
       // 项目信息数据内容的校验
       sportsRules: {
@@ -345,26 +345,26 @@ export default {
   },
   methods: {
     // 重置表单
-    Reset() {
+    Reset () {
       this.sportsForm.type = ''
     },
     // 跳到下一步
-    next() {
+    next () {
       this.activeIndex = +this.activeIndex + 1 + ''
       // 支付的时候隐藏弹框
       this.centerDialogVisible = false
     },
     // 跳到上一步
-    back() {
+    back () {
       this.activeIndex = +this.activeIndex - 1 + ''
     },
-    handleClick() { },
+    handleClick () { },
     // 确认信息 弹框显示
-    adddialog() {
+    adddialog () {
       this.centerDialogVisible = true
     },
     // 返回首页
-    first() {
+    first () {
       this.activeIndex = +this.activeIndex - 3 + ''
     }
   }
